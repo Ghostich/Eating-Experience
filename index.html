@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="stylesheet" href="css/main.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="overlay" id="overlay">
+            <h3>Searching Now</h3>
+        </div>
+        <div class="hero-bg">
+        <section class="top">
+         <header><a href="#">yummy.eats</a>
+        </header>
+            <h1><span>The Healthy</span> Eating Experience
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius rem expedita commodi ex! Beatae cupiditate obcaecati provident ex error dolore neque recusandae ipsum quis rem. Nisi, molestias! Dicta, minima?</p>
+            
+            <div class="form-container">
+            <form action="">
+                <div class="form-left">
+            <label for="city">Enter Your city</label>
+            <input type="text" name="city" id="city">
+            <p>Example: Tbilisi</p>
+        </div>
+            <input type="button" value="Find Food Now" id="cta-btn">
+        </form>
+            </div>
+        </section>
+        </div>
+        <section class="authentic">
+            <div class="right-col">
+                <h2>Authentic.Wholesome.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas soluta ipsum deserunt iste animi in nostrum quis excepturi consequatur nisi, laudantium voluptatem consectetur necessitatibus provident quia laboriosam tenetur mollitia.</p>
+                </div>
+            <img src="images/Food2.jpg" alt="pelmeni">
+        </section>
+        
+        <script>
+         let btn=document.getElementById('cta-btn')
+         let overlay=document.getElementById('overlay')
+
+         btn.addEventListener('click',() => {
+            overlay.style.display='grid';
+            overlay.classList.add('animate-overlay')
+         })
+
+        </script>
+    </body>
+</html>
